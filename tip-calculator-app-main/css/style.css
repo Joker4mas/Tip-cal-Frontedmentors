@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.wrapper {
+    width: 60%;
+    margin: 3rem auto;
+}
+
+.title-split {
+    color: hsl(183, 100%, 15%);
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 2rem;
+}
+
+.card-bill {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 20px;
+}
+
+.cal-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.form {
+    width: 90%;
+}
+
+.form-input {
+    display: flex;
+    width: 100%;
+    border-radius: 4px;
+    padding: .2rem;
+    margin-bottom: 5px;
+    background-color: hsl(184, 14%, 95%);
+    border: 2px solid transparent;
+
+}
+
+.form-input input {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(183, 100%, 20%);
+    text-align: right;
+    background-color: transparent;
+}
+
+.form-input input[type-number]::-webkit-inner-spin-button,
+.form-input input[type-number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-input input:focus {
+    outline: none;
+}
+
+.form-input:focus-within {
+    cursor: pointer;
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+.form-input span {
+    width: 25px;
+    text-align: center;
+    color: hsl(184, 14%, 56%);
+}
+
+label {
+    font-size: .8rem;
+    color: hsl(183, 100%, 15%);
+}
+
+.d-sign img {
+    height: 4vh;
+}
+
+/* The bill input field display structure */
+
+
+
+/* The tips section */
+.left-tips {
+    width: 90%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tips-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* tips structure and styling */
+.tips {
+    width: 90%;
+    border-radius: 3px;
+    color: hsl(0, 0%, 100%);
+    margin: 8px auto;
+    padding: .5rem .5rem;
+    background-color: hsl(183, 100%, 15%);
+}
+
+.tips:hover {
+    cursor: pointer;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+    /* border: 1px solid hsl(183, 100%, 15%) ; */
+
+}
+
+.tips p {
+    text-align: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+
+.tips-cus {
+    width: 90%;
+    border-radius: 3px;
+    color: hsl(184, 14%, 56%);
+    margin: 8px auto;
+    padding: .5rem .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    cursor: pointer;
+}
+
+.tips-cus:hover {
+    border: 1px solid hsl(172, 67%, 45%);
+}
+
+
+.cal-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: .5rem;
+    margin: 5px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 20px;
+}
+
+.tips-sum {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+.tips-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.sum {
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+
+}
+
+.tip-person {
+    font-size: 12px;
+    color: hsl(184, 14%, 56%);
+}
+
+.cal-value {
+    color: hsl(172, 67%, 45%);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.reset-action {
+    margin-top: 5rem;
+}
+
+.reset-action button {
+    width: 100%;
+    padding: 1rem;
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(183, 100%, 20%);
+    cursor: pointer;
+}
+
+.reset-action button:hover {
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+}
+
+@media screen and (max-width: 375px) {
+
+
+    body {
+        font-size: 24px;
+        font-family: 'Space Mono', monospace;
+        background-color: hsl(185, 41%, 84%);
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .title-split {
+        color: hsl(183, 100%, 15%);
+        text-align: center;
+        margin: .5rem auto;
+        font-size: 1.5rem;
+    }
+
+    .card-bill {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: .5rem;
+        background-color: hsl(189, 41%, 97%);
+        border-radius: 8px;
+    }
+
+    .cal-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form-input {
+        display: flex;
+        /* width: 100%; */
+        border-radius: 4px;
+        padding: .2rem;
+        margin-bottom: 5px;
+        background-color: hsl(184, 14%, 95%);
+        border: 2px solid transparent;
+
+    }
+
+    .form-input input {
+        /* width: 100%; */
+        border: none;
+        font-size: 1rem;
+        font-weight: 700;
+        color: hsl(183, 100%, 20%);
+        text-align: right;
+        background-color: transparent;
+    }
+
+    .form-input input[type-number]::-webkit-inner-spin-button,
+    .form-input input[type-number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .form-input input:focus {
+        outline: none;
+    }
+
+    .form-input:focus-within {
+        cursor: pointer;
+        border: 2px solid hsl(172, 67%, 45%);
+    }
+
+    .form-input span {
+        width: 25px;
+        text-align: center;
+        color: hsl(184, 14%, 56%);
+    }
+
+    label {
+        /* display: flex; */
+        width: 80%;
+        padding: .5rem;
+        font-size: .8rem;
+        color: hsl(183, 100%, 15%);
+    }
+
+    .left-tips {
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+
+    .tips-display {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* tips structure and styling */
+    .tips {
+        border-radius: 3px;
+        color: hsl(0, 0%, 100%);
+        margin: 8px auto;
+        padding: .5rem .5rem;
+        background-color: hsl(183, 100%, 15%);
+    }
+
+    .tips p {
+        text-align: center;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: bold;
+
+    }
+
+    .tips-cus {
+        width: 90%;
+        border-radius: 3px;
+        color: hsl(184, 14%, 56%);
+        margin: 5px auto;
+        padding: .5rem .5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        background-color: hsl(189, 41%, 97%);
+        border: none;
+        cursor: pointer;
+    }
+
+    .tips-cus p {
+        text-align: center;
+    }
+
+    .tips-cus:hover {
+        border: 1px solid hsl(172, 67%, 45%);
+    }
+
+
+    .cal-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 95%;
+        padding: .5rem;
+        margin: 5px auto;
+        background-color: hsl(183, 100%, 15%);
+        border-radius: 20px;
+    }
+
+    .tips-sum {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    .tips-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .sum {
+        color: hsl(0, 0%, 100%);
+        font-size: .8rem;
+
+    }
+
+    .tip-person {
+        font-size: 12px;
+        color: hsl(184, 14%, 56%);
+    }
+
+    .cal-value {
+        color: hsl(172, 67%, 45%);
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .reset-action {
+        margin-top: 3rem;
+    }
+
+    .reset-action button {
+        width: 100%;
+        padding: 1rem;
+        font-weight: 700;
+        border-radius: 4px;
+        border: none;
+        color: hsl(183, 100%, 15%);
+        background-color: hsl(183, 100%, 20%);
+        cursor: pointer;
+    }
+
+    .reset-action button:hover {
+        color: hsl(183, 100%, 15%);
+        background-color: hsl(172, 67%, 45%);
+    }
+
+}

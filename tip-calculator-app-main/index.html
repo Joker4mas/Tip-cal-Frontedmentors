@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="/scripts/main.js"></script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h3 class="title-split">SPLI <br />TTER</h3>
+
+      <div class="card-bill">
+        <div class="cal-left">
+          <div class="form">
+            <label>Bill</label>
+            <div class="form-input">
+              <span class="d-sign">$</span>
+              <input id="inputx" type="number" value="0" />
+            </div>
+          </div>
+          <div class="left-tips">
+            <label for="tip">Select Tip %</label>
+            <div class="tips-display">
+              <div class="tips"><p>5%</p></div>
+              <div class="tips"><p>10%</p></div>
+              <div class="tips"><p>15%</p></div>
+              <div class="tips"><p>25%</p></div>
+              <div class="tips"><p>50%</p></div>
+              <div class="tips-cus"><p>Custom</p></div>
+            </div>
+          </div>
+          <div class="form">
+            <label class="form-label">Number of people</label>
+            <div class="form-input">
+              <span class="d-sign"
+                ><img src="/person_FILL0_wght400_GRAD0_opsz48.png" alt=""
+              /></span>
+              <input id="inputx2" type="number" placeholder="0" />
+            </div>
+          </div>
+        </div>
+
+        <div class="cal-right">
+          <div class="tips-sum">
+            <div class="tips-info">
+              <div class="sum">
+                <h3 class="tip-value">Tip Amount</h3>
+                <h3 class="tip-person">/person</h3>
+              </div>
+              <div id="calvalue-1" class="cal-value">$0.00</div>
+            </div>
+            <div class="tips-info">
+              <div class="sum">
+                <h3 class="tip-value">Total</h3>
+                <h3 class="tip-person">/person</h3>
+              </div>
+              <div id="calvalue-2" class="cal-value">$0.00</div>
+            </div>
+            <div class="reset-action">
+              <button id="btn-reset" class="reset-btn">RESET</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">CodeSchach</a>.
+    </div>
+  </body>
+</html>
