@@ -14,17 +14,17 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link
+    <!-- <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
-    />
-    <script src="/scripts/main.js"></script>
+    /> -->
+    <!-- <script src="/scripts/main.js"></script> -->
 
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Frontend Mentor | Tip calculator app</title>
-
+    <script src="./js/script.js" defer></script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -47,17 +47,17 @@
             <label>Bill</label>
             <div class="form-input">
               <span class="d-sign">$</span>
-              <input id="inputx" type="number" value="0" />
+              <input id="inputx" type="number" placeholder="0" />
             </div>
           </div>
           <div class="left-tips">
             <label for="tip">Select Tip %</label>
             <div class="tips-display">
-              <div class="tips"><p>5%</p></div>
-              <div class="tips"><p>10%</p></div>
-              <div class="tips"><p>15%</p></div>
-              <div class="tips"><p>25%</p></div>
-              <div class="tips"><p>50%</p></div>
+              <div class="tips">5%</div>
+              <div class="tips">10%</div>
+              <div class="tips">15%</div>
+              <div class="tips">25%</div>
+              <div class="tips">50%</div>
               <div class="tips-cus"><p>Custom</p></div>
             </div>
           </div>
@@ -65,9 +65,9 @@
             <label class="form-label">Number of people</label>
             <div class="form-input">
               <span class="d-sign"
-                ><img src="/person_FILL0_wght400_GRAD0_opsz48.png" alt=""
+                ><img src="person_FILL0_wght400_GRAD0_opsz48.png" alt=""
               /></span>
-              <input id="inputx2" type="number" placeholder="0" />
+              <input id="inputx2" type="number" placeholder="1" />
             </div>
           </div>
         </div>
